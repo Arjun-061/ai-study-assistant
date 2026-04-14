@@ -1,5 +1,22 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
+import os
+
+if not os.path.exists("data.txt"):
+    study_content = """Python is a high-level programming language created by Guido van Rossum.
+Lists in Python are mutable sequences that can hold multiple items.
+Dictionaries store data using key-value pairs and are unordered.
+NumPy is the fundamental package for scientific computing with Python.
+Pandas is a powerful data analysis and manipulation library.
+Machine learning models require training data and validation data.
+Sentence Transformers create high-quality sentence embeddings.
+Cosine similarity measures how similar two vectors are in direction.
+RAG (Retrieval Augmented Generation) combines search with AI generation.
+Vector databases efficiently store and query high-dimensional embeddings."""
+    
+    with open("data.txt", "w", encoding="utf-8") as f:
+        f.write(study_content)
+    print("✅ Created data.txt automatically!")
 
 # Load model
 model = SentenceTransformer('all-MiniLM-L6-v2')
