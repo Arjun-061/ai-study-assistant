@@ -1,2 +1,2 @@
-sentence-transformer
+sentence-transformers
 numpy
