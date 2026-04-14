@@ -1,5 +1,0 @@
-Machine learning is a subset of artificial intelligence.
-Deep learning uses neural networks with many layers.
-Python is widely used in data science and AI.
-Operating systems manage hardware and software resources.
-Deadlock occurs when processes wait indefinitely for resources.
